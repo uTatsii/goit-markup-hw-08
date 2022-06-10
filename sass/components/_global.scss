@@ -7,13 +7,13 @@ body {
 }
 
 .section {
-  padding-top: map-get($valueMap,'sectionVerticalPadding');
-  padding-bottom: map-get($valueMap,'sectionVerticalPadding');
+  padding-top: getValue('valueMap','sectionVerticalPadding');
+  padding-bottom: getValue('valueMap','sectionVerticalPadding');
 }
 
 .container {
-  width: map-get($valueMap,'containerWidth');
-  padding-left: map-get($valueMap,'containerHorizontalPadding');
-  padding-right: map-get($valueMap,'containerHorizontalPadding');
+  width: getValue('valueMap','containerWidth');
+  padding-left: getValue('valueMap','containerHorizontalPadding');
+  padding-right: getValue('valueMap','containerHorizontalPadding');
   @include horizontalMargin(auto);
 }
