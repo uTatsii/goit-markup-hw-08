@@ -1,0 +1,7 @@
+@function getColor($miniMap, $key) {
+  @return map-get(map-get($colorMap, $miniMap), $key);
+}
+
+@function getTextStyle($mainTextStyle, $key) {
+  @return map-get($mainTextStyle, $key)
+}

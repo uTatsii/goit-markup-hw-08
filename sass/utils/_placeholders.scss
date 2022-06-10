@@ -1,0 +1,29 @@
+%teamTextSize {
+  font-size: 16px;
+  line-height: 1.1875;
+}
+
+%socialsList {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+%socialsInnerMargin {
+  margin-right: 10px;
+}
+
+%socialsLink {
+  @extend %flexCentered;
+  
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+%flexCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: getColor('background', 'dark');
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+@import './footer-contacts';
+
+@import './footer-socials';
+
+@import './footer-mailing';

@@ -1,0 +1,29 @@
+.clients__title {
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  @extend %flexCentered;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  @extend %flexCentered;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid getColor('icons', 'main');
+  border-radius: 4px;
+  fill: getColor('icons', 'main');
+
+  transition: fill $transition, border-color $transition;
+
+  &:hover,
+  &:focus {
+    fill: getColor('accent', 'main');
+    border-color: getColor('accent', 'main');
+  }
+}

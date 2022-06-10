@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto';
+  font-size: getTextStyle('mainTextStyle', 'primaryFontSize');
+  color: getColor('primaryText', 'main');
+  letter-spacing: getTextStyle('mainTextStyle', 'primaryLetterSpacing');
+  background-color: getColor('main', 'white');
+}
+
+.section {
+  padding-top: map-get($valueMap,'sectionVerticalPadding');
+  padding-bottom: map-get($valueMap,'sectionVerticalPadding');
+}
+
+.container {
+  width: map-get($valueMap,'containerWidth');
+  padding-left: map-get($valueMap,'containerHorizontalPadding');
+  padding-right: map-get($valueMap,'containerHorizontalPadding');
+  @include horizontalMargin(auto);
+}

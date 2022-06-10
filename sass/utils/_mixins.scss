@@ -1,0 +1,4 @@
+@mixin horizontalMargin($value) {
+  margin-right: $value;
+  margin-left: $value;
+}

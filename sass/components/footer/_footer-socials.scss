@@ -1,0 +1,35 @@
+.footer-socials {
+  margin-right: 93px;
+}
+
+.footer-socials__text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.1428;
+  text-transform: uppercase;
+  color: getColor('main', 'white');
+}
+
+.footer-socials__list {
+  @extend %socialsList;
+}
+
+.footer-socials__item:not(:last-child) {
+  @extend %socialsInnerMargin;
+}
+
+.footer-socials__link {
+  @extend %socialsLink;
+
+  fill: getColor('main', 'white');
+
+  background-color: rgba(getColor('main', 'white'), 0.1);
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent', 'main');
+  }
+}

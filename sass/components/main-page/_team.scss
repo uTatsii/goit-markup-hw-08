@@ -1,0 +1,62 @@
+.team {
+  background-color: getColor('background', 'light');
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item {
+  display: block;
+
+  background-color: getColor('main', 'white');
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(getColor('main', 'black'), 0.12),
+    0px 1px 1px rgba(getColor('main', 'black'), 0.14),
+    0px 2px 1px rgba(getColor('main', 'black'), 0.2);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__card {
+  padding: 30px 32px;
+}
+
+.team__name {
+  @extend %teamTextSize;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  color: getColor('primaryText', 'main');
+}
+
+.team__profession {
+  @extend %teamTextSize;
+  margin-bottom: 16px;
+
+  color: getColor('primaryText', 'sub');
+}
+
+.team__socials-list {
+  @extend %socialsList;
+}
+
+.team__socials-item:not(:last-child) {
+  @extend %socialsInnerMargin;
+}
+
+.team__socials-link {
+  @extend %socialsLink;
+
+  fill: getColor('icons', 'main');
+
+  transition: fill $transition, background-color $transition;
+
+  &:hover,
+  &:focus {
+      fill: getColor('main', 'white');
+      background-color: getColor('accent', 'main');
+  }
+}
