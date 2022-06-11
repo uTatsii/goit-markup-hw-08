@@ -1,0 +1,10 @@
+.what-we-do__title,
+.team__title,
+.clients__title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785;
+  color: getColor('primaryText', 'main');
+}

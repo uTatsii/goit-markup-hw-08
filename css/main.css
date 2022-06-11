@@ -355,9 +355,13 @@ img {
 }
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
-  margin-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:nth-child(n+3) {
+  padding-top: 60px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -515,6 +519,28 @@ img {
   color: #757575;
 }
 
+.what-we-do__title,
+.team__title,
+.clients__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785;
+  color: #212121;
+}
+
 .what-we-do {
   display: none;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team__item {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */
