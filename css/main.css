@@ -340,4 +340,80 @@ img {
 
 .centered {
   text-align: center;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+.page-header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-header_menu-btn:hover .page-header_menu-icon,
+.page-header_menu-btn:focus {
+  fill: #2196f3;
+}
+
+.main-nav {
+  display: none;
+}
+
+.contacts-header {
+  display: none;
+}
+
+.logo {
+  display: block;
+  font-family: "Raleway";
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.page-header__logo {
+  padding: 16px 0;
+  color: #000000;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.page-header_menu-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+.page-header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  border-bottom: 1px solid getColor("border", "primary");
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header_menu-btn:hover .page-header_menu-icon,
+.page-header_menu-btn:focus {
+  fill: getColor('accent', 'main');
+}
+
+.main-nav {
+  display: none;
+}
+
+.contacts-header {
+  display: none;
+}

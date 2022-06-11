@@ -36,3 +36,12 @@ img {
 .centered {
   text-align: center;
 }
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
