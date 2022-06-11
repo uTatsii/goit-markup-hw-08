@@ -1,8 +1,7 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 
-  background-color: getColor('background', 'dark');
+  background-color: getColor("background", "dark");
 }
 
 .footer__container {
@@ -10,8 +9,8 @@
   align-items: baseline;
 }
 
-@import './footer-contacts';
+@import "./footer-contacts";
 
-@import './footer-socials';
+@import "./footer-socials";
 
-@import './footer-mailing';
+@import "./footer-mailing";

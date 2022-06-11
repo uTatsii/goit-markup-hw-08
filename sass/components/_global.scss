@@ -1,19 +1,19 @@
 body {
-  font-family: 'Roboto';
-  font-size: getTextStyle('mainTextStyle', 'primaryFontSize');
-  color: getColor('primaryText', 'main');
-  letter-spacing: getTextStyle('mainTextStyle', 'primaryLetterSpacing');
-  background-color: getColor('main', 'white');
+  font-family: "Roboto";
+  font-size: getTextStyle("primaryFontSize");
+  color: getColor("primaryText", "main");
+  letter-spacing: getTextStyle("primaryLetterSpacing");
+  background-color: getColor("main", "white");
 }
 
-.section {
-  padding-top: getValue('valueMap','sectionVerticalPadding');
-  padding-bottom: getValue('valueMap','sectionVerticalPadding');
-}
+// .section {
+//   padding-top: getValue("sectionVerticalPadding");
+//   padding-bottom: getValue("sectionVerticalPadding");
+// }
 
-.container {
-  width: getValue('valueMap','containerWidth');
-  padding-left: getValue('valueMap','containerHorizontalPadding');
-  padding-right: getValue('valueMap','containerHorizontalPadding');
-  @include horizontalMargin(auto);
-}
+// .container {
+//   width: getValue("containerWidth");
+//   padding-left: getValue("containerHorizontalPadding");
+//   padding-right: getValue("containerHorizontalPadding");
+//   @include horizontalMargin(auto);
+// }
