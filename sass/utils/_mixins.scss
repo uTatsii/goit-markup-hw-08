@@ -1,0 +1,11 @@
+@mixin breakpoint($mobile-width, $tablet-width, $desktop-width) {
+  @media screen and (min-width: $mobile-width) {
+    width: $mobile-width;
+  }
+  @media screen and (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
