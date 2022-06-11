@@ -2,11 +2,10 @@
   @return map-get(map-get($colorMap, $miniMap), $key);
 }
 
-@function getValue($valueMap, $key) {
-  @return map-get($valueMap, $key);
-}
+// @function getValue($valueMap, $key) {
+//   @return map-get($valueMap, $key);
+// }
 
-@function getTextStyle($mainTextStyle, $key) {
-  @return map-get($mainTextStyle, $key);
-}
-
+// @function getTextStyle($mainTextStyle, $key) {
+//   @return map-get($mainTextStyle, $key);
+// }
