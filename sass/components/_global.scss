@@ -43,10 +43,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  &:nth-child(n + 3) {
-  padding-top: 60px;
-}
-
   @media screen and (min-width: 480px) {
     width: 480px;
   }

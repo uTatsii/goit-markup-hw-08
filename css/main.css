@@ -360,9 +360,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.container:nth-child(n+3) {
-  padding-top: 60px;
-}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
