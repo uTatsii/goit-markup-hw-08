@@ -1,0 +1,33 @@
+.benefits__item {
+  width: 100%;
+
+  &:not(&:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.benefits__card {
+  @extend %flexCentered;
+  padding: 25px 190px;
+  margin-bottom: 30px;
+
+  background-color: getColor("background", "light");
+  border-radius: 4px;
+}
+
+.benefits__subject {
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: getColor("primaryText", "main");
+}
+
+.benefits__text {
+  line-height: 1.7;
+  color: getColor('primaryText', 'sub');
+}

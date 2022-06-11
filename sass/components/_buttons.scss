@@ -11,3 +11,30 @@
   border: none;
   background-color: transparent;
 }
+
+// Hero button
+
+.hero__btn {
+  display: block;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin: 0 auto;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: getColor('main', 'white');
+
+  background-color: getColor('accent', 'main');
+  border-radius: 4px;
+  border-style: none;
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent', 'hover');
+  }
+}

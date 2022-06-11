@@ -1,0 +1,27 @@
+.hero__container {
+  
+  padding: 118px 60px;
+  width: 480px;
+  height: 400px;
+
+  background-image: url('../../../images/hero/background-hero-mobile.jpg');
+  background-size: 480px 400px;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url('../../../images/hero/background-hero-mobile@2x.jpg');
+}
+}
+}
+.hero__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: getColor("main", "white");
+}
