@@ -4,15 +4,13 @@
   width: 480px;
   height: 400px;
 
-  background-image: url('../images/hero/background-hero-mobile.jpg');
+  background-image: url(../images/hero/background-hero-mobile.jpg);
   background-size: 480px 400px;
 
-  @media (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .box {
-    background-image: url('../images/hero/background-hero-mobile@2x.jpg');
-}
+    background-image: url(../images/hero/background-hero-mobile@2x.jpg);
 }
 }
 .hero__title {
