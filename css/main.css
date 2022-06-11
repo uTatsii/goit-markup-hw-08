@@ -9,7 +9,8 @@ Use a better box model (opinionated).
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /**
@@ -284,4 +285,59 @@ summary {
   font-family: "Raleway";
   src: url(../fonts/raleway/raleway-700.eot) format("eot"), url(../fonts/raleway/raleway-700.ttf) format("ttf"), url(../fonts/raleway/raleway-700.woff) format("woff"), url(../fonts/raleway/raleway-700.woff2) format("woff2");
   font-weight: 700;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-white);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.centered {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

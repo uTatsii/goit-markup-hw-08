@@ -1,19 +1,38 @@
-body {
-  font-family: "Roboto";
-  font-size: getTextStyle("primaryFontSize");
-  color: getColor("primaryText", "main");
-  letter-spacing: getTextStyle("primaryLetterSpacing");
-  background-color: getColor("main", "white");
+html {
+  scroll-behavior: smooth;
 }
 
-// .section {
-//   padding-top: getValue("sectionVerticalPadding");
-//   padding-bottom: getValue("sectionVerticalPadding");
-// }
+body {
+  font-family: "Roboto", sans-serif;
+  @extend %mainTextStyle;
+  color: var(--main-text-color);
 
-// .container {
-//   width: getValue("containerWidth");
-//   padding-left: getValue("containerHorizontalPadding");
-//   padding-right: getValue("containerHorizontalPadding");
-//   @include horizontalMargin(auto);
-// }
+  background-color: var(--main-white);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.centered {
+  text-align: center;
+}
