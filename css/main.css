@@ -379,6 +379,11 @@ img {
   }
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .page-header {
   font-weight: 500;
   line-height: 1.14;
