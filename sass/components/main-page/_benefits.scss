@@ -19,7 +19,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    :not(:last-child) {
+    &:not(:last-child) {
       margin-right: 30px;
     }
     width: calc((100% - 4 * 30px) / 4);

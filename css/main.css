@@ -712,7 +712,7 @@ img {
     min-width: -moz-min-content;
     min-width: min-content;
   }
-  .benefits__item :not(:last-child) {
+  .benefits__item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -762,6 +762,7 @@ img {
 @media screen and (min-width: 1200px) {
   .what-we-do {
     display: block;
+    padding-top: 0;
   }
 }
 
