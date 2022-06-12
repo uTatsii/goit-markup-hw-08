@@ -51,7 +51,6 @@
 
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
-    min-width: 1400px;
     max-width: 1600px;
     min-height: 600px;
 
@@ -61,7 +60,7 @@
         rgba(getColor("background", "dark"), 0.4)
       ),
       url(../images/hero/hero-background-desktop.jpeg);
-    background-size: cover;
+    background-size: 1600px;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
