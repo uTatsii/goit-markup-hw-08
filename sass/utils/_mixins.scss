@@ -1,7 +1,7 @@
 @mixin breakpoint($mobileWidth, $tabletWidth, $desktopWidth) {
-  @media screen and (max-width: calc($mobileWidth - 0.02px)) {
+  @media screen and (max-width: calc($tabletWidth - 0.02px)) {
     min-width: 320px;
-    max-width: calc($mobileWidth - 0.02px);
+    max-width: $mobileWidth;
   }
   @media screen and (min-width: $mobileWidth) {
     width: $mobileWidth;
