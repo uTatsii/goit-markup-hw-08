@@ -1,4 +1,11 @@
 .hero {
+  padding: 118px 0;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 480px;
+
+  // Background image mobile vesion
+
   background-image: linear-gradient(
       to right,
       rgba(getColor("background", "dark"), 0.4),
@@ -19,10 +26,10 @@
       url(../images/hero/background-hero-mobile@2x.jpg);
   }
 
+  // Background image tablet version
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     max-width: 768px;
-    margin: 0 auto;
     background-image: linear-gradient(
         to right,
         rgba(getColor("background", "dark"), 0.4),
@@ -30,6 +37,7 @@
       ),
       url(../images/hero/hero-background-tablet.jpg);
     background-size: 768px auto;
+    background-repeat: no-repeat;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -43,14 +51,19 @@
     }
   }
 
+  // Background image desktop version
+
   @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
     background-image: linear-gradient(
         to right,
         rgba(getColor("background", "dark"), 0.4),
         rgba(getColor("background", "dark"), 0.4)
       ),
       url(../images/hero/hero-background-desktop.jpg);
-    background-size: 1600px;
+
+    background-size: 1600px auto;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -68,20 +81,16 @@
 }
 
 .hero__container {
-  padding: 118px 60px;
   min-width: 320px;
   max-width: 480px;
-  height: 400px;
-
   @media screen and (min-width: 768px) {
-    padding: 118px 204px;
+    padding: 0 204px;
     max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 200px 0;
-    max-width: 1600px;
-    min-height: 600px;
+    width: 1200px;
+    padding: 0;
   }
 }
 

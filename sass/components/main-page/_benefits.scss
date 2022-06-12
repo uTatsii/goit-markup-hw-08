@@ -7,9 +7,10 @@
 }
 
 .benefits__card {
-  @extend %flexCentered;
   padding: 25px 190px;
   margin-bottom: 30px;
+  width: 100%;
+  height: 120px;
 
   background-color: getColor("background", "light");
   border-radius: 4px;
