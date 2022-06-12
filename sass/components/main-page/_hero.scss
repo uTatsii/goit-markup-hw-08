@@ -1,17 +1,12 @@
-.hero__container {
-  padding: 118px 60px;
-  min-width: 320px;
-  max-width: 480px;
-  height: 400px;
-
- 
+.hero {
   background-image: linear-gradient(
       to right,
       rgba(getColor("background", "dark"), 0.4),
       rgba(getColor("background", "dark"), 0.4)
     ),
     url(../images/hero/background-hero-mobile.jpg);
-  background-size: 480px 400px;
+  background-size: cover;
+  background-position: center;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -24,18 +19,17 @@
       url(../images/hero/background-hero-mobile@2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
-    padding: 118px 204px;
-    max-width: 768px;
-    height: 400px;
 
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    max-width: 768px;
+    margin: 0 auto;
     background-image: linear-gradient(
         to right,
         rgba(getColor("background", "dark"), 0.4),
         rgba(getColor("background", "dark"), 0.4)
       ),
       url(../images/hero/hero-background-tablet.jpg);
-      background-size: 768px 400px;
+    background-size: 768px auto;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -50,17 +44,15 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 200px 0;
-    max-width: 1600px;
-    min-height: 600px;
-
     background-image: linear-gradient(
         to right,
         rgba(getColor("background", "dark"), 0.4),
         rgba(getColor("background", "dark"), 0.4)
       ),
-      url(../images/hero/hero-background-desktop.jpeg);
+      url(../images/hero/hero-background-desktop.jpg);
     background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -75,8 +67,28 @@
   }
 }
 
+.hero__container {
+  padding: 118px 60px;
+  min-width: 320px;
+  max-width: 480px;
+  height: 400px;
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
+    min-height: 600px;
+  }
+}
+
 .hero__title {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 26px;
@@ -84,9 +96,11 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: getColor("main", "white");
+  max-width: 360px;
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.3636;
+    max-width: 696px;
   }
 }
