@@ -4,6 +4,7 @@
   letter-spacing: 0.02em;
 
   border-bottom: 1px solid getColor("border", "primary");
+
 }
 
 .page-header__container {
@@ -45,6 +46,7 @@
 
 .main-nav__list {
   display: flex;
+  align-items: center;
 }
 
 .main-nav__item {
@@ -109,6 +111,7 @@
 .contacts-header__link {
   display: flex;
   align-items: center;
+  padding: 32px 0;
 
   color: getColor("primaryText", "sub");
 

@@ -1,11 +1,15 @@
-@mixin breakpoint($mobile-width, $tablet-width, $desktop-width) {
-  @media screen and (min-width: $mobile-width) {
-    width: $mobile-width;
+@mixin breakpoint($mobileWidth, $tabletWidth, $desktopWidth) {
+  @media screen and (max-width: calc($mobileWidth - 0.02px)) {
+    min-width: 320px;
+    max-width: calc($mobileWidth - 0.02px);
   }
-  @media screen and (min-width: $tablet-width) {
-    width: $tablet-width;
+  @media screen and (min-width: $mobileWidth) {
+    width: $mobileWidth;
   }
-  @media screen and (min-width: $desktop-width) {
-    width: $desktop-width;
+  @media screen and (min-width: $tabletWidth) {
+    width: $tabletWidth;
+  }
+  @media screen and (min-width: $desktopWidth) {
+    width: $desktopWidth;
   }
 }

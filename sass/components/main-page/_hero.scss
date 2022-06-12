@@ -1,17 +1,76 @@
 .hero__container {
-
   padding: 118px 60px;
   width: 480px;
   height: 400px;
 
-  background-image: url(../images/hero/background-hero-mobile.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(getColor("background", "dark"), 0.4),
+      rgba(getColor("background", "dark"), 0.4)
+    ),
+    url(../images/hero/background-hero-mobile.jpg);
   background-size: 480px 400px;
 
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/hero/background-hero-mobile@2x.jpg);
-}
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(getColor("background", "dark"), 0.4),
+        rgba(getColor("background", "dark"), 0.4)
+      ),
+      url(../images/hero/background-hero-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px;
+    width: 768px;
+    height: 400px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(getColor("background", "dark"), 0.4),
+        rgba(getColor("background", "dark"), 0.4)
+      ),
+      url(../images/hero/hero-background-tablet.jpg);
+      background-size: 768px 400px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(getColor("background", "dark"), 0.4),
+          rgba(getColor("background", "dark"), 0.4)
+        ),
+        url(../images/hero/hero-background-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    min-width: 1200px;
+    max-width: 1600px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(getColor("background", "dark"), 0.4),
+        rgba(getColor("background", "dark"), 0.4)
+      ),
+      url(../images/hero/hero-background-desktop.jpeg);
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(getColor("background", "dark"), 0.4),
+          rgba(getColor("background", "dark"), 0.4)
+        ),
+        url(../images/hero/hero-background-desktop@2x.jpg);
+    }
+  }
 }
 .hero__title {
   margin-bottom: 30px;
@@ -22,4 +81,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: getColor("main", "white");
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.3636;
+  }
 }
