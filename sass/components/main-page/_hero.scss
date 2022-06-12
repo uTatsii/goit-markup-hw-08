@@ -1,8 +1,10 @@
 .hero__container {
   padding: 118px 60px;
-  width: 480px;
+  min-width: 320px;
+  max-width: 480px;
   height: 400px;
 
+ 
   background-image: linear-gradient(
       to right,
       rgba(getColor("background", "dark"), 0.4),
@@ -24,7 +26,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 118px 204px;
-    width: 768px;
+    max-width: 768px;
     height: 400px;
 
     background-image: linear-gradient(
@@ -72,6 +74,7 @@
     }
   }
 }
+
 .hero__title {
   margin-bottom: 30px;
 
