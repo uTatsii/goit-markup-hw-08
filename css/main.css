@@ -610,8 +610,9 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__container {
     padding: 200px 0;
-    min-width: 1200px;
+    min-width: 1400px;
     max-width: 1600px;
+    min-height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-background-desktop.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-desktop.jpeg);
     background-size: cover;
