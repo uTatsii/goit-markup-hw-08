@@ -1,0 +1,119 @@
+.footer {
+  padding: 60px 0;
+  background-color: getColor("background", "dark");
+}
+
+.footer__container {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0 60px;
+  }
+}
+.footer__contacts {
+  margin-bottom: 60px;
+
+  //   @media screen and (min-width: 768px) {
+  //     margin-right: 165px;
+  //   }
+}
+
+.footer-contacts__item {
+  line-height: 1.714;
+  font-style: normal;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-contacts__address {
+  color: getColor("main", "white");
+}
+
+.footer-contacts__link {
+  color: rgba(getColor("main", "white"), 0.6);
+}
+
+.footer-socials {
+  margin-bottom: 60px;
+}
+
+.footer-socials__text {
+  @extend %footerTitles;
+}
+
+.footer-socials__list {
+  @extend %socialsList;
+}
+
+.footer-socials__item:not(:last-child) {
+  @extend %socialsInnerMargin;
+}
+
+.footer-socials__link {
+  @extend %socialsLink;
+
+  fill: getColor("main", "white");
+
+  background-color: rgba(getColor("main", "white"), 0.1);
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: getColor("accent", "main");
+  }
+}
+
+.footer-mailing__form {
+  display: block;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.footer-mailing__title {
+  display: inline-block;
+  width: 100%;
+
+  @extend %footerTitles;
+}
+
+.footer-mailing__input {
+  width: 100%;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+
+  color: getColor("main", "white");
+  line-height: 1.2859;
+
+  background-color: getColor("background", "dark");
+  border: 1px solid rgba(getColor("main", "white"), 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(getColor("main", "black"), 0.15));
+  border-radius: 4px;
+  outline: transparent;
+
+  transition: border-color $transition;
+
+  &:hover,
+  &focus {
+    border-color: getColor("accent", "main");
+  }
+}
+
+.footer-mailing__input::placeholder {
+  display: inline-block;
+
+  color: rgba(getColor("main", "white"), 0.6);
+}
+
+.footer-mailing__icon {
+  margin-left: 10px;
+  fill: getColor("main", "white");
+}

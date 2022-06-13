@@ -38,3 +38,31 @@
     background-color: getColor('accent', 'hover');
   }
 }
+
+// Footer mailing button
+
+.footer-mailing__btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding: 10px 28px;
+  margin: 0 auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: getColor('main', 'white');
+
+  background-color: getColor('accent', 'main');
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(getColor('main', 'black'), 0.15);
+  border-radius: 4px;
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent', 'hover');
+  }
+}
