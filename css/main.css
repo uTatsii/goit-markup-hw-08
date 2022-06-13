@@ -839,9 +839,6 @@ img {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: calc((100% - 120px) / 4);
-    min-width: -webkit-min-content;
-    min-width: -moz-min-content;
-    min-width: min-content;
   }
   .team__item:not(:last-child) {
     margin-right: 30px;
@@ -849,7 +846,7 @@ img {
 }
 
 .team__photo {
-  width: 450px;
+  width: 100%;
 }
 
 .team__card {
@@ -875,6 +872,36 @@ img {
 .team__socials-link:hover, .team__socials-link:focus {
   fill: #ffffff;
   background-color: #2196f3;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.clients__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 2);
+  max-width: 100%;
+}
+
+.clients__link {
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__link:hover, .clients__link:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 
 .logo {

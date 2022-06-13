@@ -36,12 +36,11 @@
       margin-right: 30px;
     }
     width: calc((100% - 4 * 30px) / 4);
-    min-width: min-content;
   }
 }
 
 .team__photo {
-  width: 450px;
+  width: 100%;
 }
 
 .team__card {
