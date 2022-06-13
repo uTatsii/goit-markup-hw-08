@@ -70,10 +70,15 @@
   }
 }
 
+.footer-mailing {
+    width: 100%;
+}
+
 .footer-mailing__form {
   display: block;
   width: 100%;
-  @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
+    max-width: 450px;
     margin: 0 auto;
   }
 }
@@ -86,6 +91,7 @@
 }
 
 .footer-mailing__input {
+    
   width: 100%;
   padding: 15px 16px;
   margin-bottom: 20px;
@@ -105,6 +111,8 @@
   &focus {
     border-color: getColor("accent", "main");
   }
+
+   
 }
 
 .footer-mailing__input::placeholder {

@@ -1089,12 +1089,17 @@ img {
   background-color: #2196f3;
 }
 
+.footer-mailing {
+  width: 100%;
+}
+
 .footer-mailing__form {
   display: block;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer-mailing__form {
+    max-width: 450px;
     margin: 0 auto;
   }
 }
