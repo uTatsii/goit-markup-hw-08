@@ -7,4 +7,8 @@
   font-size: 28px;
   line-height: 1.1785;
   color: getColor('primaryText', 'main');
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }

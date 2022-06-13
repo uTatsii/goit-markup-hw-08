@@ -325,7 +325,7 @@ summary {
   border-radius: 50%;
 }
 
-.what-we-do__description, .benefits__card, .team__socials-link {
+.clients__link, .what-we-do__description, .benefits__card, .team__socials-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,6 +755,13 @@ img {
   line-height: 1.1785;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .what-we-do__title,
+.team__title,
+.clients__title {
+    font-size: 36px;
+  }
+}
 
 .what-we-do {
   display: none;
@@ -889,6 +896,16 @@ img {
   margin-bottom: 30px;
   width: calc((100% - 60px) / 2);
   max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .clients__link {

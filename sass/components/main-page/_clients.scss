@@ -10,9 +10,18 @@
   margin-bottom: 30px;
   width: calc((100% - 2 * 30px) / 2);
   max-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 30px) / 6);
+  }
 }
 
 .clients__link {
+  @extend %flexCentered;
   height: 92px;
   border: 1px solid getColor("icons", "main");
   border-radius: 4px;
