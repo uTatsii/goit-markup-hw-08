@@ -467,6 +467,11 @@ img {
   margin-bottom: 20px;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+  }
+}
 
 .page-header {
   font-weight: 500;
@@ -701,6 +706,11 @@ img {
 }
 .footer-mailing__btn:hover, .footer-mailing__btn:focus {
   background-color: #188ce8;
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing__btn {
+    margin: 0;
+  }
 }
 
 .hero {
@@ -1054,9 +1064,27 @@ img {
     padding: 0 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0;
+    text-align: start;
+  }
+}
 
 .footer__contacts {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    margin-bottom: 0;
+    margin-right: 70px;
+    line-height: 1.715;
+  }
 }
 
 .footer-contacts__item {
@@ -1066,9 +1094,22 @@ img {
 .footer-contacts__item:not(:last-child) {
   margin-bottom: 8px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
 
 .footer-contacts__address {
+  width: 100%;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts__address {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 
 .footer-contacts__link {
@@ -1077,6 +1118,12 @@ img {
 
 .footer-socials {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
 }
 
 .footer-socials__link {
@@ -1103,6 +1150,18 @@ img {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-mailing__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
 
 .footer-mailing__title {
   display: inline-block;
@@ -1126,6 +1185,13 @@ img {
 }
 .footer-mailing__input:hover, .footer-mailing__inputfocus {
   border-color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing__input {
+    max-width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .footer-mailing__input::-webkit-input-placeholder {

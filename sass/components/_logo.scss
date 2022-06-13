@@ -39,4 +39,8 @@
   margin-bottom: 20px;
 
   color: getColor('main', 'white');
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
