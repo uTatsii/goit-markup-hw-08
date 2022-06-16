@@ -28,7 +28,9 @@
               <a class="main-nav__link link" href="./index.html">Студия</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current link" href="./portfolio.html"
+              <a
+                class="main-nav__link main-nav__link--current link"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -40,7 +42,10 @@
         <!-- Header contacts -->
         <ul class="contacts-header list">
           <li class="contacts-header__item">
-            <a class="contacts-header__link link" href="mailto:info@devstudio.com">
+            <a
+              class="contacts-header__link link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="contacts-header__icon" width="16" height="12">
                 <use href="./images/sprite.svg#mail"></use>
               </svg>
@@ -67,18 +72,28 @@
           <!-- Filter -->
           <ul class="filter list">
             <!-- цвет фона, цвет текста, ховер, фокус -->
-            <li class="filter__item"><button class="filter__btn all btn" type="button">Все</button></li>
             <li class="filter__item">
-              <button class="filter__btn wed-sites btn" type="button">Веб-сайты</button>
+              <button class="filter__btn all btn" type="button">Все</button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn apps btn" type="button">Приложения</button>
+              <button class="filter__btn wed-sites btn" type="button">
+                Веб-сайты
+              </button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn design btn" type="button">Дизайн</button>
+              <button class="filter__btn apps btn" type="button">
+                Приложения
+              </button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn marketing btn" type="button">Маркетинг</button>
+              <button class="filter__btn design btn" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn marketing btn" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- Projects -->
@@ -88,15 +103,22 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/technokriak.jpg"
+                    srcset="
+                      ./images/projects/technokriak-354.jpg 354w,
+                      ./images/projects/technokriak-370.jpg 370w,
+                      ./images/projects/technokriak.jpg     450w,
+                      ./images/projects/technokriak@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/technokriak-354.jpg"
                     alt="Технокряк"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
@@ -110,15 +132,22 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/poster-new-orlean.jpg"
+                    srcset="
+                      ./images/projects/poster-new-orlean-354.jpg 354w,
+                      ./images/projects/poster-new-orlean-370.jpg 370w,
+                      ./images/projects/poster-new-orlean.jpg     450w,
+                      ./images/projects/poster-new-orlean@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/poster-new-orlean-354.jpg"
                     alt="Баскетболисты"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
@@ -134,19 +163,28 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/app-seefood.jpg"
+                    srcset="
+                      ./images/projects/app-seefood-354.jpg 354w,
+                      ./images/projects/app-seefood-370.jpg 370w,
+                      ./images/projects/app-seefood.jpg     450w,
+                      ./images/projects/app-seefood@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/app-seefood-354.jpg"
                     alt="Логотип ресторана"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
-                  <h2 class="projects__subtitle">Ресторан <span lang="en">Seafood</span></h2>
+                  <h2 class="projects__subtitle">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
                   <p class="projects__type">Приложение</p>
                 </div>
               </a>
@@ -156,19 +194,28 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/project-prime.jpg"
+                    srcset="
+                      ./images/projects/project-prime-354.jpg 354w,
+                      ./images/projects/project-prime-370.jpg 370w,
+                      ./images/projects/project-prime.jpg     450w,
+                      ./images/projects/project-prime@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/project-prime-354.jpg"
                     alt="Логотип"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
-                  <h2 class="projects__subtitle">Проект <span lang="uk">Prime</span></h2>
+                  <h2 class="projects__subtitle">
+                    Проект <span lang="uk">Prime</span>
+                  </h2>
                   <p class="projects__type">Маркетинг</p>
                 </div>
               </a>
@@ -178,19 +225,28 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/app-boxes.jpg"
+                    srcset="
+                      ./images/projects/app-boxes-354.jpg 354w,
+                      ./images/projects/app-boxes-370.jpg 370w,
+                      ./images/projects/app-boxes.jpg     450w,
+                      ./images/projects/app-boxes@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/app-boxes-354.jpg"
                     alt="Логотип"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
-                  <h2 class="projects__subtitle">Проект <span lang="en">Boxes</span></h2>
+                  <h2 class="projects__subtitle">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
                   <p class="projects__type">Приложение</p>
                 </div>
               </a>
@@ -200,19 +256,28 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/inspiration.jpg"
+                    srcset="
+                      ./images/projects/inspiration-354.jpg 354w,
+                      ./images/projects/inspiration-370.jpg 370w,
+                      ./images/projects/inspiration.jpg     450w,
+                      ./images/projects/inspiration@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/inspiration-354.jpg"
                     alt="Логотип"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
-                  <h2 class="projects__subtitle" lang="en">Inspiration has no Borders</h2>
+                  <h2 class="projects__subtitle" lang="en">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="projects__type">Веб-сайт</p>
                 </div>
               </a>
@@ -222,19 +287,28 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/limited-edition.jpg"
+                    srcset="
+                      ./images/projects/limited-edition-354.jpg 354w,
+                      ./images/projects/limited-edition-370.jpg 370w,
+                      ./images/projects/limited-edition.jpg     450w,
+                      ./images/projects/limited-edition@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/limited-edition-354.jpg"
                     alt="Логотип"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
-                  <h2 class="projects__subtitle">Издание <span lang="en">Limited Edition</span></h2>
+                  <h2 class="projects__subtitle">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
                   <p class="projects__type">Дизайн</p>
                 </div>
               </a>
@@ -244,19 +318,28 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/project-lab.jpg"
+                    srcset="
+                      ./images/projects/project-lab-354.jpg 354w,
+                      ./images/projects/project-lab-370.jpg 370w,
+                      ./images/projects/project-lab.jpg     450w,
+                      ./images/projects/project-lab@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/project-lab-354.jpg"
                     alt="Логотип"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
-                  <h2 class="projects__subtitle">Проект <span lang="en">LAB</span></h2>
+                  <h2 class="projects__subtitle">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
                   <p class="projects__type">Маркетинг</p>
                 </div>
               </a>
@@ -266,15 +349,22 @@
                 <div class="projects__overlay">
                   <img
                     class="projects__photo"
-                    src="./images/projects/growing-business.jpg"
+                    srcset="
+                      ./images/projects/growing-business-354.jpg 354w,
+                      ./images/projects/growing-business-370.jpg 370w,
+                      ./images/projects/growing-business.jpg     450w,
+                      ./images/projects/growing-business@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/projects/growing-business-354.jpg"
                     alt="Логотип"
-                    width="370"
+                    width="354"
                     height="294"
                   />
                   <p class="projects__description">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__text">
@@ -302,12 +392,16 @@
                 г. Киев, пр-т Леси Украинки, 26
               </li>
               <li class="footer-contacts__item footer-contacts__mail">
-                <a class="footer-contacts__link link" href="mailto:info@example.com"
+                <a
+                  class="footer-contacts__link link"
+                  href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="footer-contacts__item footer-contacts__phone phone">
-                <a class="footer-contacts__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="footer-contacts__link link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -348,8 +442,14 @@
         </div>
         <!-- Footer mailing -->
         <div class="footer-mailing">
-          <form class="footer-mailing__form" name="footer-mailing__form" autocomplete="on">
-            <strong class="footer-mailing__title">Подпишитесь на рассылку</strong>
+          <form
+            class="footer-mailing__form"
+            name="footer-mailing__form"
+            autocomplete="on"
+          >
+            <strong class="footer-mailing__title"
+              >Подпишитесь на рассылку</strong
+            >
             <input
               class="footer-mailing__input"
               type="email"
