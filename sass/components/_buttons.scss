@@ -71,6 +71,58 @@
   }
 }
 
+// Modal close button
+
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  @extend %flexCentered;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  border-radius: 50%;
+  border: 1px solid rgba(getColor('main', 'black'), 0.1);
+  background-color: getColor('main', 'white');
+  fill: getColor('main', 'black');
+
+  transition: fill $transition;
+
+  &:hover,
+  &:focus {
+    fill: getColor('accent', 'main');
+  }
+}
+
+// Modal send button
+
+.modal__send-btn {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: getColor('main', 'white');
+
+  background-color: getColor('accent', 'main');
+  box-shadow: 0px 4px 4px rgba(getColor('main', 'black'), 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent', 'hover');
+  }
+}
+
 // Filter buttons
 
 .filter__btn {
