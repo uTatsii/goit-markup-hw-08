@@ -8,6 +8,10 @@ body {
   color: var(--main-text-color);
 
   background-color: var(--main-white);
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,
