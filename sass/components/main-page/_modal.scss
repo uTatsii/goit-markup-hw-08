@@ -41,6 +41,10 @@
   border-radius: 4px;
 
   transition: all $transition;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+  }
 }
 
 // Order form
@@ -48,7 +52,6 @@
 .modal__form {
   display: flex;
   flex-direction: column;
-
 }
 
 .modal__title {
@@ -58,7 +61,11 @@
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  color: getColor('primaryText', 'main');
+  color: getColor("primaryText", "main");
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.17;
+  }
 }
 
 .modal__label {
@@ -67,7 +74,7 @@
   font-size: 12px;
   line-height: 1.1667;
   letter-spacing: 0.01em;
-  color: getColor('primaryText', 'sub');
+  color: getColor("primaryText", "sub");
 }
 
 .order-user-name,
@@ -83,10 +90,10 @@
 
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(getColor('primaryText', 'main'), 0.2);
+  border-color: rgba(getColor("primaryText", "main"), 0.2);
   border-radius: 4px;
   outline: transparent;
-  background-color: getColor('main', 'white');
+  background-color: getColor("main", "white");
 
   cursor: pointer;
 
@@ -94,7 +101,7 @@
 
   .modal__label:hover &,
   &:focus {
-    border-color: getColor('accent', 'main');
+    border-color: getColor("accent", "main");
   }
 }
 
@@ -103,13 +110,13 @@
   top: 29px;
   left: 12px;
 
-  fill: getColor('primaryText', 'main');
+  fill: getColor("primaryText", "main");
 
   transition: fill $transition;
 
   .modal__label:hover &,
   .modal__input:focus + & {
-    fill: getColor('accent', 'main');
+    fill: getColor("accent", "main");
   }
 }
 
@@ -124,23 +131,23 @@
   height: 120px;
   resize: none;
 
-  border: 1px solid rgba(getColor('primaryText', 'main'), 0.2);
+  border: 1px solid rgba(getColor("primaryText", "main"), 0.2);
   border-radius: 4px;
   outline: transparent;
-  background-color: getColor('main', 'white');
+  background-color: getColor("main", "white");
 
   transition: border-color $transition;
 
   .modal__label:hover &,
   &:focus {
-    border-color: getColor('accent', 'main');
+    border-color: getColor("accent", "main");
   }
 
   &::placeholder {
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.01em;
-    color: rgba(getColor('primaryText', 'sub'), 0.5);
+    color: rgba(getColor("primaryText", "sub"), 0.5);
   }
 }
 
@@ -154,7 +161,12 @@
 
   font-size: 12px;
   line-height: 1.167;
-  color: getColor('primaryText', 'sub');
+  color: getColor("primaryText", "sub");
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .modal__checkbox {
@@ -167,7 +179,7 @@
 
   border-width: 2px;
   border-style: solid;
-  border-color: getColor('primaryText', 'main');
+  border-color: getColor("primaryText", "main");
   border-radius: 2px;
 
   transition: border-color $transition;
@@ -175,7 +187,7 @@
   .modal__agreement:hover &,
   .modal__agreement-input:focus + &,
   .modal__agreement-input:checked + & {
-    border-color: getColor('accent', 'hover');
+    border-color: getColor("accent", "hover");
   }
 }
 
@@ -184,7 +196,7 @@
   top: 4px;
   left: 4px;
 
-  fill: getColor('accent', 'main');
+  fill: getColor("accent", "main");
   opacity: 0;
 
   transition: opacity $transition;
@@ -200,5 +212,10 @@
   font-size: inherit;
   line-height: 1.167;
   text-decoration-line: underline;
-  color: getColor('accent', 'main');
+  color: getColor("accent", "main");
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
