@@ -9,7 +9,7 @@
   width: 100vw;
   height: 100vh;
 
-  background-color: rgba(getColor('main', 'black'), 0.2);
+  background-color: rgba(getColor("main", "black"), 0.2);
 
   transition: all $transition;
 }
@@ -19,8 +19,7 @@
   opacity: 0;
   pointer-events: none;
 
-  transition: visibility $transition,
-    opacity $transition;
+  transition: visibility $transition, opacity $transition;
 }
 
 .modal-wrapper {
@@ -32,11 +31,13 @@
   width: calc(100% - 30px);
   min-width: 320px;
   max-width: 450px;
-  max-height: calc(100vh - 30px);
+  max-height: calc(100% - 30px);
+  padding: 40px;
 
-  background-color: getColor('main', 'white');
-  box-shadow: 0px 1px 3px rgba(getColor('main', 'black'), 0.12), 0px 1px 1px rgba(getColor('main', 'black'), 0.14),
-    0px 2px 1px rgba(getColor('main', 'black'), 0.2);
+  background-color: getColor("main", "white");
+  box-shadow: 0px 1px 3px rgba(getColor("main", "black"), 0.12),
+    0px 1px 1px rgba(getColor("main", "black"), 0.14),
+    0px 2px 1px rgba(getColor("main", "black"), 0.2);
   border-radius: 4px;
 
   transition: all $transition;
@@ -47,7 +48,7 @@
 .modal__form {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .modal__title {
@@ -146,11 +147,13 @@
 .modal__agreement {
   position: relative;
 
-  @extend %flexCentered;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
-  padding-left: 5px;
+  padding-left: 24px;
 
-  line-height: 1.7142;
+  font-size: 12px;
+  line-height: 1.167;
   color: getColor('primaryText', 'sub');
 }
 
@@ -194,7 +197,8 @@
 .modal__terms-link {
   display: inline-block;
 
-  line-height: 1.7142;
+  font-size: inherit;
+  line-height: 1.167;
   text-decoration-line: underline;
   color: getColor('accent', 'main');
 }

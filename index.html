@@ -555,7 +555,9 @@
           </svg>
         </button>
         <form class="modal__form" name="modal__form" autocomplete="on">
-          <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
+          <strong class="modal__title"
+            >Оставьте свои данные, мы вам перезвоним</strong
+          >
           <label class="order-user-name modal__label">
             Имя
             <input
@@ -565,20 +567,34 @@
               autofocus
               required
             />
-            <svg class="order-user-name-icon modal__icon" width="18" height="18">
+            <svg
+              class="order-user-name-icon modal__icon"
+              width="18"
+              height="18"
+            >
               <use href="./images/sprite.svg#order-name"></use>
             </svg>
           </label>
           <label class="order-tel modal__label">
             Телефон
-            <input class="order-tel-input modal__input" type="tel" name="order-tel" required />
+            <input
+              class="order-tel-input modal__input"
+              type="tel"
+              name="order-tel"
+              required
+            />
             <svg class="order-tel-icon modal__icon" width="18" height="18">
               <use href="./images/sprite.svg#order-tel"></use>
             </svg>
           </label>
           <label class="order-mail modal__label">
             Почта
-            <input class="order-mail-input modal__input" type="email" name="order-mail" required />
+            <input
+              class="order-mail-input modal__input"
+              type="email"
+              name="order-mail"
+              required
+            />
             <svg class="order-mail-icon modal__icon" width="18" height="18">
               <use href="./images/sprite.svg#order-mail"></use>
             </svg>
@@ -594,11 +610,15 @@
             ></textarea>
           </label>
           <label class="modal__agreement">
-            <input class="modal__agreement-input visually-hidden" type="checkbox" name="modal__agreement-btn" />
-            <span class="modal__checkbox"></span>
+            <input
+              class="modal__agreement-input visually-hidden"
+              type="checkbox"
+              name="modal__agreement-btn"
+            />
             <svg class="modal__agreement-icon" width="16" height="15">
               <use href="./images/sprite.svg#modal__agreement-btn"></use>
             </svg>
+            <span class="modal__checkbox"></span>
             Соглашаюсь с рассылкой и принимаю&nbsp;
             <a class="modal__terms-link link" href="#">Условия договора</a>
           </label>

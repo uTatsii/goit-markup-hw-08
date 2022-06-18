@@ -325,7 +325,7 @@ summary {
   border-radius: 50%;
 }
 
-.modal__agreement, .clients__link, .what-we-do__description, .benefits__card, .modal__btn, .footer-socials__link, .team__socials-link {
+.clients__link, .what-we-do__description, .benefits__card, .modal__btn, .footer-socials__link, .team__socials-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1136,7 +1136,8 @@ img {
   width: calc(100% - 30px);
   min-width: 320px;
   max-width: 450px;
-  max-height: calc(100vh - 30px);
+  max-height: calc(100% - 30px);
+  padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1261,9 +1262,15 @@ img {
 
 .modal__agreement {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 30px;
-  padding-left: 5px;
-  line-height: 1.7142;
+  padding-left: 24px;
+  font-size: 12px;
+  line-height: 1.167;
   color: #757575;
 }
 
@@ -1300,7 +1307,8 @@ img {
 
 .modal__terms-link {
   display: inline-block;
-  line-height: 1.7142;
+  font-size: inherit;
+  line-height: 1.167;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
