@@ -20,6 +20,19 @@
     flex-direction: column;
 }
 
-.mobile-menu__close-btn {
-    margin-left: auto;
+.mobile-menu__list {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    color: getColor('primaryText', 'main');
+}
+
+.mobile-menu__item {
+    &:not(:last-child) {
+    margin-bottom: 32px;
+    }
+}
+
+.mobile-menu__link {
+    
 }

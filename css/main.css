@@ -783,10 +783,13 @@ img {
   background-color: #2196f3;
 }
 
-.page-header_menu-btn {
+.mobile-menu__close-btn {
   position: absolute;
   top: 10px;
   right: 15px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .hero {
@@ -1681,6 +1684,13 @@ img {
           flex-direction: column;
 }
 
-.mobile-menu__close-btn {
-  margin-left: auto;
+.mobile-menu__list {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  color: #212121;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */
