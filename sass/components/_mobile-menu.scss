@@ -1,16 +1,13 @@
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  @extend %modalPositioning;
+  
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   overflow-y: scroll;
   display: none;
-  background-color: #ffffff;
+  background-color: getColor('main', 'white');
   padding: 48px 40px;
   z-index: 1;
 

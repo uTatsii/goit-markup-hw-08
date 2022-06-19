@@ -1,13 +1,9 @@
 // Modal window
 
 .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
+  @extend %modalPositioning;
+  
   z-index: 2;
-
-  width: 100vw;
-  height: 100vh;
 
   background-color: rgba(getColor("main", "black"), 0.2);
 
