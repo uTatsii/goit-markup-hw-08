@@ -4,6 +4,7 @@
   @extend %modalPositioning;
   
   z-index: 2;
+  opacity: 1;
 
   background-color: rgba(getColor("main", "black"), 0.2);
 

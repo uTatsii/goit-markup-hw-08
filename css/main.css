@@ -1033,6 +1033,7 @@ img {
 
 .backdrop {
   z-index: 2;
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
