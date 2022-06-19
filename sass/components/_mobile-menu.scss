@@ -1,13 +1,13 @@
 .mobile-menu {
   @extend %modalPositioning;
-  
+
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   overflow-y: scroll;
   display: none;
-  background-color: getColor('main', 'white');
+  background-color: getColor("main", "white");
   padding: 48px 40px;
   z-index: 1;
 
@@ -85,7 +85,7 @@
 }
 
 .mobile-menu__socials-item {
-    position: relative;
+  position: relative;
 
   font-weight: 500;
   font-size: 18px;
@@ -98,7 +98,7 @@
   }
 
   &:not(:last-child)::after {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 0;
@@ -106,7 +106,7 @@
     height: 22px;
     width: 1px;
 
-    background-color: rgba(getColor('primaryText', 'main'), 0.2);
+    background-color: rgba(getColor("primaryText", "main"), 0.2);
   }
 }
 
