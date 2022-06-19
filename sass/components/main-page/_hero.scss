@@ -1,6 +1,5 @@
 .hero {
   padding: 118px 0;
-  text-align: center;
   margin: 0 auto;
   max-width: 480px;
 
@@ -81,8 +80,6 @@
 }
 
 .hero__container {
-  min-width: 320px;
-  max-width: 480px;
   @media screen and (min-width: 768px) {
     padding: 0 204px;
     max-width: 768px;
@@ -95,9 +92,7 @@
 }
 
 .hero__title {
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto 30px;
 
   font-weight: 900;
   font-size: 26px;

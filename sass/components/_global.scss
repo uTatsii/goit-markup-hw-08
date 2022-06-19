@@ -7,6 +7,8 @@ body {
 
   background-color: getColor('main', 'white');
 
+  overflow-x: hidden;
+
   &.modal-open {
     overflow: hidden;
   }
