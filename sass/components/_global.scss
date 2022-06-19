@@ -3,16 +3,14 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   @extend %mainTextStyle;
-  color: var(--main-text-color);
 
-  background-color: var(--main-white);
+  background-color: getColor('main', 'white');
 
   &.modal-open {
     overflow: hidden;
   }
-}
+} 
 
 h1,
 h2,

@@ -1,3 +1,5 @@
+// Global styles for header
+
 .page-header {
   font-weight: 500;
   line-height: 1.14;
@@ -7,24 +9,12 @@
 }
 
 .page-header__container {
-  display: flex;
+  @extend %flexAlignCentered;
   justify-content: space-between;
-  align-items: center;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
-}
-
-.page-header_menu-btn {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.page-header_menu-btn:hover .page-header_menu-icon,
-.page-header_menu-btn:focus {
-  fill: getColor("accent", "main");
 }
 
 .main-nav {
@@ -37,14 +27,13 @@
 }
 
 .main-nav__list {
-  display: flex;
-  align-items: center;
+  @extend %flexAlignCentered;
 }
 
 .main-nav__item {
   position: relative;
 
-  &:not(&:last-child) {
+  &:not(:last-child) {
     margin-right: 50px;
   }
 }
@@ -94,17 +83,16 @@
 }
 
 .contacts-header__item:first-child {
+  @media screen and (max-width: 1199.98px) {
     margin-bottom: 10px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
-    margin-bottom: 0;
   }
 }
 
 .contacts-header__link {
-  display: flex;
-  align-items: center;
- 
+  @extend %flexAlignCentered;
 
   color: getColor("primaryText", "sub");
 
@@ -114,12 +102,12 @@
   &:focus {
     color: getColor("accent", "main");
   }
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: 12px;
   }
-  @media screen and (min-width:1200px) {
-     padding: 32px 0;
-     font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+    font-size: 14px;
   }
 }
 
@@ -127,29 +115,28 @@
   margin-right: 8px;
 
   fill: currentColor;
-  
+
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
   }
 }
 .contacts-header__icon.mail {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 14px;
     height: 10px;
   }
-   @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
   }
 }
 
 .contacts-header__icon.smartphone {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 10px;
     height: 14px;
   }
-  @media screen and (min-width:1200px) {
-    width: 10px;
+  @media screen and (min-width: 1200px) {
     height: 16px;
   }
 }

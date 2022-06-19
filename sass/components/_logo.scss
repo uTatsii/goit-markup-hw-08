@@ -1,5 +1,5 @@
 .logo {
-    display: block;
+  display: block;
 
   font-family: "Raleway";
   font-style: inherit;
@@ -7,14 +7,14 @@
   font-size: 24px;
   line-height: 1.167;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.1923;
   }
 }
 
 .logo-web {
-  color: getColor('accent', 'main');
+  color: getColor("accent", "main");
 }
 
 .page-header__logo {
@@ -22,7 +22,7 @@
 
   color: getColor("main", "black");
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     padding: 26px 0;
     margin-right: 88px;
   }
@@ -38,7 +38,7 @@
   display: inline-block;
   margin-bottom: 20px;
 
-  color: getColor('main', 'white');
+  color: getColor("main", "white");
 
   @media screen and (min-width: 1200px) {
     font-size: 26px;
