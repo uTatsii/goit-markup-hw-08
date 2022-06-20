@@ -52,17 +52,6 @@
   color: getColor("accent", "main");
 }
 
-.mobile-menu__close-icon {
-  fill: getColor("primaryText", "main");
-
-  transition: fill $transition;
-
-  &:hover,
-  &:focus {
-    fill: getColor("accent", "main");
-  }
-}
-
 .mobile-menu__contacts-list {
   margin-top: auto;
   margin-bottom: 64px;
