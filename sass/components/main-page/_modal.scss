@@ -13,7 +13,7 @@
     opacity: 0;
     pointer-events: none;
 
-    transition: visibility $transition, opacity $transition;
+    transition: opacity $transition;
   }
 }
 
@@ -21,7 +21,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1, 1);
   overflow: auto;
 
   width: calc(100% - 30px);
@@ -36,7 +36,7 @@
     0px 2px 1px rgba(getColor("main", "black"), 0.2);
   border-radius: 4px;
 
-  transition: position $transition;
+  transition: transform $transition;
 
   @media screen and (min-width: 1200px) {
     max-width: 528px;

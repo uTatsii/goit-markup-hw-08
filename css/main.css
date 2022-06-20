@@ -394,18 +394,18 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
-.team__item:not(:last-child), .benefits__item:not(:last-child) {
-  margin-bottom: 30px;
+.team__item:not(:first-child), .benefits__item:not(:first-child) {
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .team__item, .benefits__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
     width: calc((100% - 60px) / 2);
     min-width: -webkit-min-content;
     min-width: -moz-min-content;
@@ -416,8 +416,8 @@ body {
   .team__item, .benefits__item {
     width: calc((100% - 120px) / 4);
   }
-  .team__item:not(:last-child), .benefits__item:not(:last-child) {
-    margin-right: 30px;
+  .team__item:not(:first-child), .benefits__item:not(:first-child) {
+    margin-left: 30px;
   }
 }
 
@@ -633,11 +633,6 @@ img {
   }
 }
 
-@media screen and (max-width: 1199.98px) {
-  .contacts-header__item:first-child {
-    margin-bottom: 10px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contacts-header__item:first-child {
     margin-right: 30px;
@@ -649,12 +644,10 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-header__link:hover, .contacts-header__link:focus {
-  color: #2196f3;
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 11991199.98px) {
   .contacts-header__link {
     font-size: 12px;
+    padding: 5px 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -662,6 +655,9 @@ img {
     padding: 32px 0;
     font-size: 14px;
   }
+}
+.contacts-header__link:hover, .contacts-header__link:focus {
+  color: #2196f3;
 }
 
 .contacts-header__icon {
@@ -712,6 +708,18 @@ img {
   }
 }
 
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  fill: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__close-btn:focus {
+  fill: #2196f3;
+}
+
 .hero__btn {
   display: block;
   min-width: 200px;
@@ -727,6 +735,9 @@ img {
   .footer-mailing__btn {
     margin: 0;
   }
+}
+.footer-mailing__btn:hover, .footer-mailing__btn:focus {
+  border-color: #2196f3;
 }
 
 .modal__btn {
@@ -779,16 +790,11 @@ img {
   background-color: #2196f3;
 }
 
-.mobile-menu__close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
 .hero {
   padding: 118px 0;
   margin: 0 auto;
-  max-width: 480px;
+  width: 100%;
+  max-width: 1600px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/background-hero-mobile.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/background-hero-mobile.jpg);
   background-size: cover;
@@ -800,7 +806,7 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/background-hero-mobile@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 481px) and (max-width: 768pxpx) {
   .hero {
     max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-background-tablet.jpg);
@@ -809,13 +815,13 @@ img {
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (max-width: 768pxpx) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768pxpx) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768pxpx) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 768pxpx) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-background-tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-tablet@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
     padding: 200px 0;
     max-width: 1600px;
@@ -826,7 +832,7 @@ img {
     background-position: center;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-background-desktop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-desktop@2x.jpg);
@@ -1040,16 +1046,16 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1, 1);
+          transform: translate(-50%, -50%) scale(1, 1);
   overflow: auto;
   width: calc(100% - 30px);
   min-width: 320px;
@@ -1060,8 +1066,10 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transition: position 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: position 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
   .modal-wrapper {
@@ -1329,13 +1337,17 @@ img {
 .footer-contacts__link {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-contacts__link:hover, .footer-contacts__link:focus {
+  color: #2196f3;
+}
+
 .footer-socials {
   margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-socials {
     margin-bottom: 0;
-    margin-right: 93px;
+    margin-right: auto;
   }
 }
 
@@ -1351,6 +1363,7 @@ img {
 
 .footer-mailing {
   width: 100%;
+  margin-left: auto;
 }
 
 .footer-mailing__form {
@@ -1371,7 +1384,6 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 570px;
-    margin-left: auto;
     margin-right: 0;
   }
 }
@@ -1396,7 +1408,7 @@ img {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-mailing__input:hover, .footer-mailing__inputfocus {
+.footer-mailing__input:hover, .footer-mailing__input:focus {
   border-color: #2196f3;
 }
 @media screen and (min-width: 1200px) {
@@ -1570,10 +1582,15 @@ img {
   line-height: 1.175;
   letter-spacing: 0.02em;
   overflow-y: scroll;
-  display: none;
   background-color: #ffffff;
   padding: 48px 40px;
   z-index: 1;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 320px) and (max-width: 479.98px) {
   .mobile-menu {
@@ -1582,6 +1599,8 @@ img {
 }
 
 .mobile-menu.is-open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1604,6 +1623,11 @@ img {
 
 .mobile-menu__link {
   color: inherit;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
 }
 
 .mobile-menu__link--current {
@@ -1633,12 +1657,21 @@ img {
   font-size: 34px;
   line-height: 1.1764;
   color: #2196f3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.mobile-menu__contacts-link.tel:hover, .mobile-menu__contacts-link.tel:focus {
+  color: #188ce8;
+}
 .mobile-menu__contacts-link.mail {
   font-size: 24px;
   line-height: 1.667;
   color: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__contacts-link.mail:hover, .mobile-menu__contacts-link.mail:focus {
+  color: #2196f3;
 }
 
 .mobile-menu__socials-list {
@@ -1676,4 +1709,9 @@ img {
 
 .mobile-menu__socials-link {
   color: inherit;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__socials-link:hover, .mobile-menu__socials-link:focus {
+  color: #188ce8;
 }/*# sourceMappingURL=main.css.map */

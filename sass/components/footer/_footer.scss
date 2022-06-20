@@ -58,7 +58,7 @@
 
   &:hover,
   &:focus {
-    
+    color: getColor('accent', 'main');
   }
 }
 
@@ -66,7 +66,7 @@
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
-    margin-right: 93px;
+    margin-right: auto;
   }
 }
 
@@ -99,6 +99,7 @@
 
 .footer-mailing {
   width: 100%;
+  margin-left: auto;
 }
 
 .footer-mailing__form {
@@ -112,7 +113,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 570px;
-    margin-left: auto;
     margin-right: 0;
   }
 }
@@ -141,7 +141,7 @@
   transition: border-color $transition;
 
   &:hover,
-  &focus {
+  &:focus {
     border-color: getColor("accent", "main");
   }
 

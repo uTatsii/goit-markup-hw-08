@@ -19,6 +19,24 @@
   }
 }
 
+// Mobile close btn
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  fill: getColor('primaryText', 'main');
+
+  @extend %buttonSvg;
+
+  transition: color $transition;
+
+  &:focus {
+    fill: getColor('accent', 'main');
+  }
+}
+
 // Hero button
 
 .hero__btn {
@@ -43,6 +61,11 @@
 
   @media screen and (min-width: 1200px) {
     margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: getColor('accent', 'main');
   }
 }
 
@@ -114,14 +137,4 @@
   color: getColor("main", "white");
 
   background-color: getColor("accent", "main");
-}
-
-// Mobile close btn
-
-.mobile-menu__close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-
-  @extend %buttonSvg;
 }

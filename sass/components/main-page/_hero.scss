@@ -1,7 +1,8 @@
 .hero {
   padding: 118px 0;
   margin: 0 auto;
-  max-width: 480px;
+  width: 100%;
+  max-width: 1600px;
 
   // Background image mobile vesion
 
@@ -27,7 +28,7 @@
 
   // Background image tablet version
 
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  @media screen and (min-width: 481px) and (max-width: 768pxpx) {
     max-width: 768px;
     background-image: linear-gradient(
         to right,
@@ -52,7 +53,7 @@
 
   // Background image desktop version
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     padding: 200px 0;
     max-width: 1600px;
     background-image: linear-gradient(
