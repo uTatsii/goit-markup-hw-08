@@ -55,6 +55,11 @@
 
 .footer-contacts__link {
   color: rgba(getColor("main", "white"), 0.6);
+
+  &:hover,
+  &:focus {
+    
+  }
 }
 
 .footer-socials {
