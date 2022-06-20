@@ -30,8 +30,9 @@
 
   @extend %buttonSvg;
 
-  transition: color $transition;
+  transition: fill $transition;
 
+  &:hover,
   &:focus {
     fill: getColor('accent', 'main');
   }

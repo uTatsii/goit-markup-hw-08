@@ -2,11 +2,11 @@
 
 .backdrop {
   @extend %modalPositioning;
-  
+
   z-index: 2;
   opacity: 1;
 
-  transition: opacity $transition;
+  transition: opacity $transition, visibility $transition;
 
   background-color: rgba(getColor("main", "black"), 0.2);
 
@@ -14,7 +14,6 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-
   }
 }
 

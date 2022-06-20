@@ -36,7 +36,7 @@
         rgba(getColor("background", "dark"), 0.4)
       ),
       url(../images/hero/hero-background-tablet.jpg);
-    background-size: 768px auto;
+    background-size: cover;
     background-repeat: no-repeat;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -63,7 +63,7 @@
       ),
       url(../images/hero/hero-background-desktop.jpg);
 
-    background-size: 1600px auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
