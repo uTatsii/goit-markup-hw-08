@@ -63,10 +63,8 @@
 }
 
 .footer-socials {
+  @media screen and (max-width: 1199.98px) {
   margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-    margin-right: auto;
   }
 }
 
@@ -99,7 +97,6 @@
 
 .footer-mailing {
   width: 100%;
-  margin-left: auto;
 }
 
 .footer-mailing__form {
@@ -107,7 +104,7 @@
   width: 100%;
   @media screen and (min-width: 768px) {
     max-width: 450px;
-    margin: 0 auto;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     display: flex;

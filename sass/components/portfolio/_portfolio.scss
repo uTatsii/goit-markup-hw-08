@@ -1,58 +1,60 @@
 .filter {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -8px;
-    margin-top: -15px;
-    margin-bottom: 40px;
-    @media screen and (min-width: 768px) {
-        justify-content: center;
-        margin-top: 0;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-top: -15px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-top: 0;
+  }
 }
 
 .filter__item {
-    margin-left: 8px;
-    margin-top: 15px;
+  margin-left: 8px;
+  margin-top: 15px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 0;
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .projects {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -30px;
-        margin-top: -30px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .projects__card {
-    margin-top: 30px;
+  margin-top: 30px;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        margin-left: 30px;
-        flex-basis: calc((100% - 30px * 2) / 2);
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
 
-    @media screen and (min-width: 1200px) {
-        flex-basis: calc((100% - 30px * 3) / 3);
-    }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
 
   transition: box-shadow $transition;
 
   &:hover,
   &:focus {
-    box-shadow: 1px 4px 6px 0 rgba(getColor('main', 'black'), 0.16),
-      0 4px 4px 0 rgba(getColor('main', 'black'), 0.06),
-      0 1px 1px 0 rgba(getColor('main', 'black'), 0.12);
+    box-shadow: 1px 4px 6px 0 rgba(getColor("main", "black"), 0.16),
+      0 4px 4px 0 rgba(getColor("main", "black"), 0.06),
+      0 1px 1px 0 rgba(getColor("main", "black"), 0.12);
   }
 }
 
@@ -62,12 +64,12 @@
 }
 
 .projects__text {
-    width: 100%;
+  flex-grow: 1;
   padding: 20px 24px;
 
-  border-right: 1px solid getColor('border', 'secondary');
-  border-bottom: 1px solid getColor('border', 'secondary');
-  border-left: 1px solid getColor('border', 'secondary');
+  border-right: 1px solid getColor("border", "secondary");
+  border-bottom: 1px solid getColor("border", "secondary");
+  border-left: 1px solid getColor("border", "secondary");
 }
 
 .projects__subtitle {
@@ -75,13 +77,13 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: getColor('primaryText', 'main');
+  color: getColor("primaryText", "main");
 }
 
 .projects__type {
   font-size: 16px;
   line-height: 1.875;
-  color: getColor('primaryText', 'sub');
+  color: getColor("primaryText", "sub");
 }
 
 .projects__description {
@@ -96,9 +98,9 @@
 
   font-size: 18px;
   line-height: 1.55;
-  color: getColor('main', 'white');
+  color: getColor("main", "white");
 
-  background-color: rgba(getColor('accent', 'main'), 0.902);
+  background-color: rgba(getColor("accent", "main"), 0.902);
 
   transition: transform $transition;
 
@@ -107,7 +109,7 @@
     transform: translateY(0%);
   }
 
-    @media screen and (min-width: 768px) {
-     padding: 49px 24px 0px;
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 0px;
   }
 }
